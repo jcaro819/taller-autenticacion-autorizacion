@@ -223,7 +223,7 @@ Además, `user_id` **no** está en `$fillable` del modelo `Evento`: aunque algui
 php artisan test
 ```
 
-23 tests (70 aserciones): login correcto e incorrecto, contraseñas hasheadas, perfil con y sin token, logout que revoca el token, listado público, el dueño modifica su evento (200), otro organizador / admin / asistente no pueden (403), autorización antes que validación, 422, `user_id` no modificable, 404, métricas para admin (200) y para el resto (403/401), y los datos del seeder.
+27 tests (unitarios de la Policy + de integración): login correcto e incorrecto, contraseñas hasheadas, perfil con y sin token, logout que revoca el token, listado público, el dueño modifica su evento (200), otro organizador / admin / asistente no pueden (403), autorización antes que validación, 422, `user_id` no modificable, 404, métricas para admin (200) y para el resto (403/401), y los datos del seeder.
 
 ---
 
